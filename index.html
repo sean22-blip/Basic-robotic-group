@@ -10,13 +10,24 @@
 
 <body>
     <h1 style="font-size: 4em;">SIMULATOR</h1><br>
-    <div class="Button">
-        <button id="greenBtn">Green</button>
-        <button id="yellowBtn">Yellow</button>
-        <button id="redBtn">Red</button><br>
-    </div>  
-    <button id="stopBtn">STOP</button>
-    <p id="p1" style="font-size: 100px;">...</p>  
+    <div class="button-row">
+    <button id="greenBtn">Green</button>
+    <input class="onAndoffBtn" type="button" onclick="myfunon1()" id="on1" value="ON">
+    <input class="onAndoffBtn" type="button" onclick="myfunoff1()" id="off1" value="OFF">
+</div>
+
+<div class="button-row">
+    <button id="yellowBtn">Yellow</button>
+    <input class="onAndoffBtn" type="button" onclick="myfunon2()" id="on2" value="ON">
+    <input class="onAndoffBtn" type="button" onclick="myfunoff2()" id="off2" value="OFF">
+</div>
+
+<div class="button-row">
+    <button id="redBtn">Red</button>
+    <input class="onAndoffBtn" type="button" onclick="myfunon3()" id="on3" value="ON">
+    <input class="onAndoffBtn" type="button" onclick="myfunoff3()" id="off3" value="OFF">
+</div>
+
 
 
     <script src="index.js"></script>

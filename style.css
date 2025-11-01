@@ -4,48 +4,89 @@ body {
     background-color: rgb(255, 246, 229);
 }
 
+h1 {
+    margin: 20px 0;
+}
+
+
+button,
+.onAndoffBtn {
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
+}
+
+
 #greenBtn {
     background-color: rgb(33, 214, 33);
-
+    border-color: rgb(27, 160, 27);
 }
 
 #yellowBtn {
     background-color: yellow;
+    border-color: gold;
 }
 
 #redBtn {
     background-color: red;
+    border-color: darkred;
 }
 
-button {
-    margin: 10px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 30px;
-    border: 3px solid;
-}
 
 #greenBtn:hover {
     cursor: pointer;
-    transition: ease-in;
     background-color: rgb(27, 160, 27);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 #yellowBtn:hover {
     cursor: pointer;
-    transition: ease-in;
     background-color: rgb(208, 208, 0);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 #redBtn:hover {
     cursor: pointer;
-    transition: ease-in;
     background-color: rgb(213, 0, 0);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
-#stopBtn{
-    padding: 20px 100px 20px 100px;
-    font-size:2em;
+
+.onAndoffBtn {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 25px;
+    border: 2px solid #999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#stopBtn:hover{
-    cursor: pointer;
+
+.onAndoffBtn:hover {
     background-color: darkgray;
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.onAndoffBtn.active {
+    background-color: green;
+    color: white;
+    border-color: darkgreen;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
 }
